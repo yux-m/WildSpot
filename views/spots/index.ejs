@@ -1,0 +1,40 @@
+<% layout('/layouts/boilerplate')%>
+<div id="map" style="width: 100%; height: 500px"></div>
+<h1>All Spots</h1>
+<div class="">
+  <a href="/spots/new">Add Spot</a>
+</div>
+
+  <% for (let spot of spots) {%>
+  <div class="card mb-3">
+    <div class="row">
+      <div class="col-md-4">
+        <%if(spot.images.length) {%>
+            <img class="img-fluid" alt="" src="<%=spot.images[0].url%>">
+            <% }else {%>
+            <img class="img-fluid" alt=""
+                src="https://res.cloudinary.com/***REMOVED***/image/upload/v1664290414/WildSpot/afbez2hl4x5dcp6qb4te.jpg">
+            <% } %>
+      </div>
+      <div class="col-md-8">
+           <div class="card-body">
+               <h5 class="card-title"><%= spot.title %> </h5>
+               <p class="card-text"><%= spot.description %></p>
+               <p class="card-text">
+                   <small class="text-muted"><%= spot.location%></small>
+               </p>
+               <a class="btn btn-outline-dark" href="/spots/<%=spot._id%>">View <%=spot.title%></a>
+           </div>
+       </div>
+    </div>
+  </div>
+  <% } %>
+  <br>
+  <br>
+
+  <script>
+      const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
+      const spots = { features: <%- JSON.stringify(spots) %>}
+  </script>
+
+  <script src="/javascripts/clusterMap.js"></script>
