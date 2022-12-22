@@ -35,11 +35,11 @@ const seedDB = async () => {
         ]
       },
       images: [{
-          url: 'https://res.cloudinary.com/***REMOVED***/image/upload/v1664290230/WildSpot/wvbsxwgmedobdcdwiujj.jpg',
+          url: 'https://res.cloudinary.com/dvidz8bwi/image/upload/v1664290230/WildSpot/wvbsxwgmedobdcdwiujj.jpg',
           filename: 'WildSpot/wvbsxwgmedobdcdwiujj'
         },
         {
-          url: 'https://res.cloudinary.com/***REMOVED***/image/upload/v1664290414/WildSpot/afbez2hl4x5dcp6qb4te.jpg',
+          url: 'https://res.cloudinary.com/dvidz8bwi/image/upload/v1664290414/WildSpot/afbez2hl4x5dcp6qb4te.jpg',
           filename: 'WildSpot/afbez2hl4x5dcp6qb4te'
         }
       ],
