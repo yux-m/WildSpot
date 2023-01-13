@@ -71,5 +71,4 @@
 
 ## Complete Video of Function Test
 
-[<img width="1338" alt="thumbnail" src="https://user-images.githubusercontent.com/109834466/212392459-198af526-addb-4018-8eb3-cde92cf096d1.png">](https://youtu.be/d1-NBdFVEGE "Function Test")
-
+[<img width="560" alt="thumbnail" src="https://user-images.githubusercontent.com/109834466/212394928-9f23bae2-b16e-4d9b-a236-6ce5ec8204d3.png">](https://youtu.be/d1-NBdFVEGE "Function Test")
